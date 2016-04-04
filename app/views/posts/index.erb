@@ -1,0 +1,11 @@
+<table>
+  <% @posts.each do |p| %>
+  <tr>
+    <td>
+      <%= p.title %>
+      <br>
+      <%= p.description %>
+    </td>
+  </tr>
+  <% end %>
+</table>
