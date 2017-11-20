@@ -1,14 +1,20 @@
+
 require 'rails_helper'
 
-RSpec.describe "posts/show", :type => :view do
+RSpec.describe "posts/index", :type => :view do
   before(:each) do
-    @post = assign(:post, Post.create!(
-      :title => "Title"
-    ))
+    assign(:posts, [
+      Post.create!(
+        :title => "Title"
+      ),
+      Post.create!(
+        :title => "Title"
+      )
+    ])
   end
 
-  it "renders attributes in <p>" do
+  it "renders a list of posts" do
     render
-    expect(rendered).to match(/Title/)
+    assert_select "tr>td", :text => "Title".to_s, :count => 2
   end
 end
