@@ -127,3 +127,6 @@ RSpec.describe PostsController, :type => :controller do
   end
 
 end
+
+
+#rails generate scaffold Post title:string description:text --no-test-framework
