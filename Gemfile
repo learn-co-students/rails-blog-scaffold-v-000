@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
@@ -40,7 +40,7 @@ group :test, :development do
   gem "better_errors"
   gem "sprockets_better_errors"
   gem "binding_of_caller"
-  gem "factory_girl_rails"
+  gem "factory_bot"
   gem "simplecov"
   gem "database_cleaner"
   gem "sqlite3"
