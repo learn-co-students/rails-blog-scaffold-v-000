@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 4.2'
@@ -42,7 +42,7 @@ group :test, :development do
   gem "factory_bot"
   gem "simplecov"
   gem "database_cleaner"
-  gem "sqlite3"
+  gem 'sqlite3', '~> 1.3.7'
   gem "pry"
   gem "guard-rspec", require: false
   gem "thin"
