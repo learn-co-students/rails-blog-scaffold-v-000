@@ -11,6 +11,9 @@ gem 'coffee-rails'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 
+gem 'rb-readline'
+
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -42,8 +45,9 @@ group :test, :development do
   gem "factory_bot"
   gem "simplecov"
   gem "database_cleaner"
-  gem "sqlite3"
+  gem 'sqlite3', '~> 1.3.6'
   gem "pry"
+  gem 'pry-coolline'
   gem "guard-rspec", require: false
   gem "thin"
 end
