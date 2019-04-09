@@ -15,6 +15,7 @@ gem 'bootsnap'
 gem 'jquery-rails'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder'
+gem 'rb-readline'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', group: :doc
 gem 'rails-controller-testing'
