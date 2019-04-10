@@ -1,0 +1,7 @@
+rails generate scaffold
+Post
+<optional first attribute name>:<first attribute type>
+<optional second attribute name>:<second attribute type>
+<optional third attribute name>:<third attribute type> <etc.> --no-test-framework
+
+rails generate scaffold Post title:string description:text --no-test-framework
