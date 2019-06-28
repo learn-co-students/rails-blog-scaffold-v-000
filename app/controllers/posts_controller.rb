@@ -1,4 +1,8 @@
 class PostsController < ApplicationController
+  #scaffold generated controller used to be class Post < ActiveRecord::Base but I changed it
+  #form used to be form_with(model: post, local: true) do |form| %>  but I changed it
+  #rails has been updated since lab was written - 2 tweaks needed to pass #10 
+  #https://github.com/learn-co-curriculum/rails-blog-scaffold/issues/10
   before_action :set_post, only: [:show, :edit, :update, :destroy]
 
   # GET /posts
