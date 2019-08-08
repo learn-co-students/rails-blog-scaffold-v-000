@@ -14,6 +14,8 @@ The model name will be `Post` and the attributes will be `title` and
 `description`. The `title` attribute should be of type `string` and
 `description` should be of type `text`.
 
+rails generate scaffold Apartment address:string price:float description:text image_url:string --no-test-framework
+
 ## What are all these files?
 
 All the files that you currently see in your project directory, with the
