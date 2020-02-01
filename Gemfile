@@ -34,7 +34,7 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 group :test, :development do
-  gem "rspec-rails"
+  gem 'rspec-rails', '~> 4.0.0.beta3'
   gem "capybara"
   gem "selenium-webdriver"
   gem "better_errors"
@@ -42,10 +42,12 @@ group :test, :development do
   gem "factory_bot"
   gem "simplecov"
   gem "database_cleaner"
-gem 'sqlite3', '~> 1.3.6'
+gem 'sqlite3', '~> 1.4'
   gem "pry"
   gem "guard-rspec", require: false
   gem "thin"
 end
 
 gem "bootstrap-sass"
+gem "minitest"
+gem "rails-dom-testing"

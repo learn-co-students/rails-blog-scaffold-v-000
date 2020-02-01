@@ -1,10 +1,14 @@
-require 'rails_helper'
+RSpec.describe PostsController do
+  describe "GET Posts" do
+    it "displays @posts" do
+      post = Post.create
+      get '/posts'
+      expect(assigns(:posts)).to eq([post])
+    end
 
-RSpec.describe "Posts", :type => :request do
-  describe "GET /posts" do
-    it "works! (now write some real specs)" do
-      get posts_path
-      expect(response).to have_http_status(200)
+    it "renders the index template" do
+      get '/posts'
+      expect(response).to render_template("posts/index",)
     end
   end
 end
