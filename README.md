@@ -2,6 +2,8 @@
 
 ## Instructions
 
+rails generate scaffold Posts title:string description:text --no-test-framework
+
 This is a simple lab. All you have to do is get the tests passing. There are a
 bunch of tests, but it should take you less than 5 minutes to finish this lab.
 Try to figure out the one command you need to run to make the entire suite pass.
